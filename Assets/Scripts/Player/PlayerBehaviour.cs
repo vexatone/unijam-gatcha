@@ -6,7 +6,8 @@ class PlayerBehaviour : MonoBehaviour
     private PlayerStatus _statusJudge;
     private bool _doubleJumped;
 
-    private const float maxVelocityX = 5f;
+    public float maxVelocityX = 5f;
+    public float alpha = 10f;
     
     public void Jump()
     {
@@ -26,8 +27,7 @@ class PlayerBehaviour : MonoBehaviour
     public void Move(string direction)
     {
         float xVel = _rigidbody.velocity.x;
-        float alpha = 10f;
-        
+
         if (direction == "left")
         {
             xVel = Mathf.Clamp(xVel - alpha * Time.deltaTime, -maxVelocityX, maxVelocityX);
