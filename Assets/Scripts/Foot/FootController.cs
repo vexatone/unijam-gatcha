@@ -37,7 +37,6 @@ public class FootController : MonoBehaviour
         _grounded = false;
     }
 
-    // Start is called before the first frame update
     void Start()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
@@ -46,7 +45,6 @@ public class FootController : MonoBehaviour
         _thwompState = FootState.Initial;
     }
 
-    // Update is called once per frame
     void Update()
     {
         switch (_thwompState)

@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 7c1f6a352297c9c4488114253695083c
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - NanumBarunpen
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: b146f83ed191fb6478df4499f36bcf91, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
