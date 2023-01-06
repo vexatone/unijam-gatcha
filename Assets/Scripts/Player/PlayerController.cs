@@ -16,12 +16,12 @@ class PlayerController : MonoBehaviour
             _playerBehaviour.Jump();
         }
 
-        if (Input.GetKey(KeyCode.A))
+        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
         {
             _playerBehaviour.Move("left");
         }
 
-        if (Input.GetKey(KeyCode.D))
+        if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
         {
             _playerBehaviour.Move("right");
         }
