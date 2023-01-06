@@ -3,14 +3,16 @@ using UnityEngine;
 class UIManager : MonoBehaviour
 {
     private bool _paused;
+    [SerializeField] private GameObject button;
+    
     public void ShowPause()
     {
-        
+        button.SetActive(true);
     }
 
     public void HidePause()
     {
-        
+        button.SetActive(false);
     }
 
     public void OnPauseButtonClick()
