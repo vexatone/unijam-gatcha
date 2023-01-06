@@ -50,6 +50,6 @@ class PlayerBehaviour : MonoBehaviour
     private void Update()
     {
         if (_statusJudge.isOnGround) _doubleJumped = false;
-        print(_rigidbody.velocity.x);
+        //print(_rigidbody.velocity.x);
     }
 }
