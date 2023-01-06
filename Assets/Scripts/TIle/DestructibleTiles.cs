@@ -16,7 +16,7 @@ public class DestructibleTiles : MonoBehaviour
     {
         if (check)
         {
-            if (collision.gameObject.CompareTag("Player")) ;
+            if (collision.gameObject.CompareTag("Player"))
             {
                 Vector3 hitPosition = Vector3.zero;
                 foreach (var hit in collision.contacts)
