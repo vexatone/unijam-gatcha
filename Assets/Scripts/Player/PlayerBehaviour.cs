@@ -51,5 +51,31 @@ class PlayerBehaviour : MonoBehaviour
     {
         if (_statusJudge.isOnGround) _doubleJumped = false;
         //print(_rigidbody.velocity.x);
+        GameManager.Instance.playerBehaviour = this;
+        CheckPlayerState();
+    }
+
+    public void SetEmptyBall()
+    {
+        maxVelocityX = 5f;
+        alpha = 10f;
+    }
+
+    public void SetFullBall()
+    {
+        maxVelocityX = 3f;
+        alpha = 7f;
+    }
+
+    private void CheckPlayerState()
+    {
+        if (GameManager.Instance.Coins >= 10)
+        {
+            SetFullBall();
+        }
+        else
+        {
+            SetEmptyBall();
+        }
     }
 }

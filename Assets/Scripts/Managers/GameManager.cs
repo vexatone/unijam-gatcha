@@ -5,6 +5,7 @@ class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     public Water water;
+    public PlayerBehaviour playerBehaviour;
 
     private int coins;
     public int Coins
@@ -14,16 +15,17 @@ class GameManager : MonoBehaviour
         set
         {
             coins = value;
-            //player speed check
             //player sprite check
             //UI check
             if(coins >= 10)
             {
                 water.SetTrigger();
+                playerBehaviour.SetFullBall();
             }
             else
             {
                 water.SetCollider();
+                playerBehaviour.SetEmptyBall();
             }
         }
     }
@@ -33,7 +35,7 @@ class GameManager : MonoBehaviour
         // Singleton
         if (Instance != null && Instance != this) Destroy(this);
         Instance = this;
-        
+        coins = 0;
         DontDestroyOnLoad(this);
     }
 }

@@ -10,7 +10,7 @@ public class Water : MonoBehaviour
     {
         col = GetComponent<CompositeCollider2D>();
         GameManager.Instance.water = this;
-        CheckCoins();
+        CheckWaterState();
     }
 
     public void SetCollider()
@@ -23,7 +23,7 @@ public class Water : MonoBehaviour
         col.isTrigger = true;
     }
 
-    private void CheckCoins()
+    private void CheckWaterState()
     {
         if(GameManager.Instance.Coins >= 10)
         {
