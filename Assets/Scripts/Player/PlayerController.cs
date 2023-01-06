@@ -15,5 +15,15 @@ class PlayerController : MonoBehaviour
         {
             _playerBehaviour.Jump();
         }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            _playerBehaviour.Move("left");
+        }
+
+        if (Input.GetKey(KeyCode.D))
+        {
+            _playerBehaviour.Move("right");
+        }
     }
 }

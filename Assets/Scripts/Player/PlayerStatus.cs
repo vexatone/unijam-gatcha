@@ -2,9 +2,18 @@ using UnityEngine;
 
 class PlayerStatus : MonoBehaviour
 {
-    public bool isOnGround()
+    public bool isOnGround { get; private set; }
+
+    private void OnCollisionStay2D(Collision2D col)
     {
-        var hit = Physics2D.Raycast(transform.position, Vector2.down);
-        return (hit.collider == null);
+        if (col.GetContact(0).point.y < transform.position.y)
+        {
+            isOnGround = true;
+        }
+    }
+
+    private void OnCollisionExit2D()
+    {
+        isOnGround = false;
     }
 }
