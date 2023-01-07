@@ -115,23 +115,10 @@ class GameManager : MonoBehaviour
 
     private void Start()
     {
-        // TODO: 임시 코드. 나중에 데이터 만들면 지워야 함
-        
     }
 
     private void Update()
     {
-        // TODO: 테스트용 코드. 나중에 데이터 만들면 지워야 함
-        /*
-        TimeLeft = TimeLeft - 1;
-        if (TimeLeft < 0)
-            TimeLeft = 200;
-        Coins = Coins + 1;
-        if (Coins >= 20)
-        {
-            Coins = 0;
-        }
-        */
         if (_isGameOngoing)
         {
             if (oneSecondBuffer >= 1f)

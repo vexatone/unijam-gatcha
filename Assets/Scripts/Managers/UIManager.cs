@@ -74,7 +74,6 @@ class UIManager : MonoBehaviour
 
     public void UpdateStage(int? index, string? name)
     {
-        print($"Current level = {index}. {name}");
         int i = index ?? GameManager.Instance.StageIndex;
         string s = name ?? GameManager.Instance.StageName;
         stageText.text = $"{i}. {s}";
@@ -82,7 +81,6 @@ class UIManager : MonoBehaviour
 
     public void UpdateCoinCount(int coin)
     {
-        print($"Coins = {coin}");
         if (coin < 7)
             coinText.text = $"<#FFFFFF>{coin}</color> / {GameManager.MaxCoinCount}";
         else if (coin < 14)
@@ -93,7 +91,6 @@ class UIManager : MonoBehaviour
 
     public void UpdateTimeLeft(int timeLeft)
     {
-        print($"Time left = {timeLeft}");
         if (timeLeft >= 100)
             timerText.text = $"{timeLeft}";
         else if (timeLeft >= 50)
