@@ -4,6 +4,7 @@ using UnityEngine;
 class MouseAnimator : MonoBehaviour
 {
     public string direction;
+    [SerializeField] private float animationInterval = 0.2f;
     [SerializeField] private Sprite appearance1;
     [SerializeField] private Sprite appearance2;
 
@@ -20,9 +21,9 @@ class MouseAnimator : MonoBehaviour
     {
         while (true)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(animationInterval);
             _renderer.sprite = appearance1;
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(animationInterval);
             _renderer.sprite = appearance2;
         }
     }

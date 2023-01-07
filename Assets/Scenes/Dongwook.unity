@@ -2352,5 +2352,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Mouse
       objectReference: {fileID: 0}
+    - target: {fileID: 6152395402084022140, guid: fb36ea6cdf66c6640abc15e945656371, type: 3}
+      propertyPath: animationInterval
+      value: 0.2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fb36ea6cdf66c6640abc15e945656371, type: 3}
