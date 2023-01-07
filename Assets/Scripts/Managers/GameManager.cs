@@ -31,6 +31,7 @@ class GameManager : MonoBehaviour
             UIManager.Instance.UpdateStage(null, stageName);
         }
     }
+    private string currentSceneName;
 
     private int timeLeft;
     public int TimeLeft
@@ -99,8 +100,20 @@ class GameManager : MonoBehaviour
         }
         */
     }
+    
     public void LoadScene(string nextScene)
     {
         SceneManager.LoadScene(nextScene);
+        currentSceneName = nextScene;
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
+    }
+
+    public void Restart()
+    {
+        LoadScene(currentSceneName);
     }
 }

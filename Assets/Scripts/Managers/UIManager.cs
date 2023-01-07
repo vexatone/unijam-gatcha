@@ -58,19 +58,17 @@ class UIManager : MonoBehaviour
 
     public void OnPausePopupRestartButtonClick()
     {
-        // TODO
-
+        GameManager.Instance.Restart();
     }
 
     public void OnPausePopupMainMenuButtonClick()
     {
-        // TODO
-
+        GameManager.Instance.LoadScene("MainMenu");
     }
 
     public void OnPausePopupExitButtonClick()
     {
-        // TODO
+        GameManager.Instance.Quit();
 
     }
 
