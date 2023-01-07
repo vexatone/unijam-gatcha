@@ -36,5 +36,6 @@ public class DestructibleTiles : MonoBehaviour
         check = true;
         yield return new WaitForSeconds(0.9f);
         destructableTilemap.SetTile(destructableTilemap.WorldToCell(hitPosition), null);
+        yield return null;
     }
 }
