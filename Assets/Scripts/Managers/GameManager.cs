@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 class GameManager : MonoBehaviour
 {
@@ -81,7 +82,7 @@ class GameManager : MonoBehaviour
         StageIndex = 1;
         StageName = "완구점";
         TimeLeft = 200;
-        Coins = 0;
+        
     }
 
     private void Update()
@@ -97,5 +98,9 @@ class GameManager : MonoBehaviour
             Coins = 0;
         }
         */
+    }
+    public void LoadScene(string nextScene)
+    {
+        SceneManager.LoadScene(nextScene);
     }
 }
