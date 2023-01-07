@@ -1,6 +1,27 @@
-using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
+public struct StageInfo
+{
+    public StageInfo(int stageIndex, string stageName, int timeLeft)
+    {
+        StageIndex = stageIndex;
+        StageName = stageName;
+        TimeLeft = timeLeft;
+    }
+    public int StageIndex { get; }
+    public string StageName { get; }
+    public int TimeLeft { get; }
+
+    public readonly static Dictionary<string, StageInfo> StageInformations = new Dictionary<string, StageInfo>()
+    {
+        { "MainMenu", new StageInfo(0, "메인 화면", 200) },
+        { "Stage1", new StageInfo(1, "완구점", 200) },
+        { "Stage2", new StageInfo(2, "푸드코트", 200) },
+        { "Stage3", new StageInfo(3, "완구점", 200) },
+    };
+};
 
 class GameManager : MonoBehaviour
 {
@@ -63,12 +84,14 @@ class GameManager : MonoBehaviour
 
             if(coins >= 10)
             {
-                water.SetTrigger();
+                if (water != null)
+                    water.SetTrigger();
                 playerBehaviour.SetBallState(3.0f, 7.0f, 1.5f);
             }
             else
             {
-                water.SetCollider();
+                if (water != null)
+                    water.SetCollider();
                 playerBehaviour.SetBallState(5.0f, 10.0f);
             }
         }
@@ -111,7 +134,6 @@ class GameManager : MonoBehaviour
         */
         if (_isGameOngoing)
         {
-            print($"{oneSecondBuffer}");
             if (oneSecondBuffer >= 1f)
             {
                 TimeLeft -= 1;
@@ -129,9 +151,10 @@ class GameManager : MonoBehaviour
 
     public void Initialize()
     {
-        StageIndex = 1;
-        StageName = "완구점";
-        TimeLeft = 200;
+        StageInfo info = StageInfo.StageInformations[currentSceneName];
+        StageIndex = info.StageIndex;
+        StageName = info.StageName;
+        TimeLeft = info.TimeLeft;
         oneSecondBuffer = 0;
         _isGameOngoing = true;
     }
