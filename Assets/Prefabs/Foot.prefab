@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1050994872331691558}
   - component: {fileID: 1050994872331691555}
   - component: {fileID: 410327483}
-  - component: {fileID: 6387923312363779987}
+  - component: {fileID: 2250285096131995729}
   m_Layer: 0
   m_Name: Foot
   m_TagString: Foot
@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ded3d47ab68ad49dcafc494424db840f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 74b64b1533f044eb8bc49e00a7d92797, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -141,7 +141,7 @@ CapsuleCollider2D:
   m_Offset: {x: -0.27, y: -7.9}
   m_Size: {x: 6.39, y: 0.4}
   m_Direction: 1
---- !u!60 &6387923312363779987
+--- !u!60 &2250285096131995729
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -158,7 +158,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 8, y: 16}
+    oldSize: {x: 8, y: 19}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -166,21 +166,20 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 2.51, y: -5.31}
-      - {x: 1.37, y: -5.24}
-      - {x: 0.5020151, y: -5.1582675}
-      - {x: -0.81, y: -3.51}
-      - {x: 0.03, y: -3.49}
-      - {x: 0.049999997, y: -3.47}
-      - {x: 0.049999997, y: 8}
-      - {x: -4, y: 8}
-      - {x: -4, y: -3.49}
-      - {x: -2.9662926, y: -3.9421713}
-      - {x: -3.632734, y: -4.3983426}
-      - {x: -4, y: -4.68}
-      - {x: -4, y: -7.21}
-      - {x: -3.4299998, y: -7.83}
-      - {x: 2.8899999, y: -7.83}
-      - {x: 4, y: -7.21}
-      - {x: 4, y: -6.17}
-      - {x: 3.49, y: -5.58}
+    - - {x: 4, y: -7.8799996}
+      - {x: 3.56, y: -7.19}
+      - {x: 1.39, y: -6.54}
+      - {x: -0.81, y: -5.23}
+      - {x: 0.03, y: -5.21}
+      - {x: 0.049999997, y: -5.19}
+      - {x: 0.049999997, y: 9.5}
+      - {x: -4, y: 9.5}
+      - {x: -4, y: -5.23}
+      - {x: -3.7099998, y: -6.08}
+      - {x: -4, y: -6.3999996}
+      - {x: -4, y: -8.95}
+      - {x: -3.4199998, y: -9.5}
+      - {x: 2.85, y: -9.5}
+      - {x: 3.4399998, y: -9.24}
+      - {x: 3.46, y: -9.22}
+      - {x: 4, y: -8.929999}
