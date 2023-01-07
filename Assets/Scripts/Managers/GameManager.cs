@@ -135,6 +135,11 @@ class GameManager : MonoBehaviour
         oneSecondBuffer = 0;
         _isGameOngoing = true;
     }
+
+    public void StopGame()
+    {
+        _isGameOngoing = false;
+    }
     
     public void Quit()
     {
