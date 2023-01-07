@@ -15,11 +15,13 @@ public class Water : MonoBehaviour
 
     public void SetCollider()
     {
-        col.isTrigger = false;
+        if(col != null)
+            col.isTrigger = false;
     }
 
     public void SetTrigger()
     {
-        col.isTrigger = true;
+        if (col != null)
+            col.isTrigger = true;
     }
 }

@@ -42,17 +42,17 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  alignment: 1
+  spritePivot: {x: 0, y: 1}
+  spritePixelsToUnits: 683
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -103,18 +103,156 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
-    outline: []
+    sprites:
+    - serializedVersion: 2
+      name: red_rec_lego_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79f18c7663116a541bfa1109cdb62198
+      internalID: -1748983436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_rec_lego_1
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 832
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fd8aa3dd48c52843825202b76979fe3
+      internalID: -861629016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_rec_lego_2
+      rect:
+        serializedVersion: 2
+        x: 1666
+        y: 834
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a4ceee8f13ce2e48a30a8c2914bd541
+      internalID: -2057600596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_rec_lego_3
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 0
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4358eac882a7824fb4b1576392f38c2
+      internalID: 430992995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_rec_lego_4
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd0cc002e8ecd748b74395493c1a0f4
+      internalID: -661481040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: red_rec_lego_5
+      rect:
+        serializedVersion: 2
+        x: 1668
+        y: 0
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdb209a633b041d48a93a5bc6a728663
+      internalID: 1755253410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline:
+    - - {x: -1112.9502, y: 805.89453}
+      - {x: -1222.9014, y: 658.03516}
+      - {x: -1222.9014, y: -809.5604}
+      - {x: -1220.458, y: -812.0044}
+      - {x: 1200.9111, y: -812.0044}
+      - {x: 1200.9111, y: 805.89453}
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 0
+    internalID: 1537655665
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      red_rec_lego_3: 430992995
+      red_rec_lego_5: 1755253410
+      red_rec_lego_4: -661481040
+      red_rec_lego_2: -2057600596
+      red_rec_lego_1: -861629016
+      red_rec_lego_0: -1748983436
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
