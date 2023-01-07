@@ -64,4 +64,9 @@ class PlayerBehaviour : MonoBehaviour
         alpha = a;
         _rigidbody.gravityScale = g;
     }
+
+    public void SetDrag(float drag = 0f)
+    {
+        _rigidbody.drag = drag;
+    }
 }
