@@ -10,7 +10,7 @@ public class Gum : MonoBehaviour
         {
             var player = col.gameObject.GetComponent<PlayerBehaviour>();
             player.jumpable = false;
-            player.SetBallState(3.0f, 7.0f);
+            player.SetBallState(1.5f, 4.0f);
         }
     }
 
