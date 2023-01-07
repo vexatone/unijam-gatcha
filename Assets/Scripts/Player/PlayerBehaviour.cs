@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.Serialization;
 
@@ -5,6 +6,7 @@ class PlayerBehaviour : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     private PlayerStatus _statusJudge;
+    private GameObject _doubleJumpEffect;
     public bool jumpable;
     private bool _doubleJumped;
 
@@ -15,14 +17,17 @@ class PlayerBehaviour : MonoBehaviour
     {
         if (_statusJudge.isOnGround && jumpable)
         {
+            // 그냥 점프
             var boostedVelocity = new Vector3(_rigidbody.velocity.x, 7f, 0f);
             _rigidbody.velocity = boostedVelocity;
         }
         else if (!_doubleJumped && jumpable)
         {
+            // 2단 점프
             var boostedVelocity = new Vector3(_rigidbody.velocity.x * 0.3f, 5f, 0f);
             _rigidbody.velocity = boostedVelocity;
             _doubleJumped = true;
+            StartCoroutine(_doubleJumpEffect.GetComponent<DoubleJumpEffect>().DoubleJumpEffectCoroutine());
         }
     }
 
@@ -50,6 +55,8 @@ class PlayerBehaviour : MonoBehaviour
         _doubleJumped = false;
         GameManager.Instance.playerBehaviour = this;
         GameManager.Instance.Coins = GameManager.Instance.Coins;
+        _doubleJumpEffect = transform.GetChild(0).gameObject;
+        _doubleJumpEffect.GetComponent<SpriteRenderer>().enabled = false;
     }
 
     private void Update()

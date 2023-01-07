@@ -33,6 +33,7 @@ class GameManager : MonoBehaviour
     }
     private string currentSceneName;
 
+    private float oneSecondBuffer;
     private int timeLeft;
     public int TimeLeft
     {
@@ -40,6 +41,10 @@ class GameManager : MonoBehaviour
         set
         {
             timeLeft = value;
+            if (timeLeft < 0)
+            {
+                GameOver();
+            }
             UIManager.Instance.UpdateTimeLeft(timeLeft);
         }
     }
@@ -68,6 +73,11 @@ class GameManager : MonoBehaviour
         }
     }
 
+    public void GameOver()
+    {
+        print("Game Over...");
+    }
+
     private void Awake()
     {
         // Singleton
@@ -83,7 +93,7 @@ class GameManager : MonoBehaviour
         StageIndex = 1;
         StageName = "완구점";
         TimeLeft = 200;
-        
+        oneSecondBuffer = 0;
     }
 
     private void Update()
@@ -99,6 +109,13 @@ class GameManager : MonoBehaviour
             Coins = 0;
         }
         */
+        print($"{oneSecondBuffer}");
+        if (oneSecondBuffer >= 1f)
+        {
+            TimeLeft -= 1;
+            oneSecondBuffer -= 1f;
+        }
+        oneSecondBuffer += Time.deltaTime;
     }
     
     public void LoadScene(string nextScene)

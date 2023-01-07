@@ -26,7 +26,10 @@ public class FootController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Player")) ; // TODO: Game over logic
+        if (col.gameObject.CompareTag("Player"))
+        {
+            GameManager.Instance.GameOver();
+        }
         else
         {
             _grounded = true;
