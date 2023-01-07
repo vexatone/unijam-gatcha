@@ -20,12 +20,12 @@ class GameManager : MonoBehaviour
             if(coins >= 10)
             {
                 water.SetTrigger();
-                playerBehaviour.SetFullBall();
+                playerBehaviour.SetBallState(3.0f, 7.0f, 1.5f);
             }
             else
             {
                 water.SetCollider();
-                playerBehaviour.SetEmptyBall();
+                playerBehaviour.SetBallState(5.0f, 10.0f);
             }
         }
     }

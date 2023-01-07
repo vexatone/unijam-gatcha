@@ -45,37 +45,20 @@ class PlayerBehaviour : MonoBehaviour
         _rigidbody = GetComponent<Rigidbody2D>();
         _statusJudge = GetComponent<PlayerStatus>();
         _doubleJumped = false;
+        GameManager.Instance.playerBehaviour = this;
+        GameManager.Instance.Coins = GameManager.Instance.Coins;
     }
 
     private void Update()
     {
         if (_statusJudge.isOnGround) _doubleJumped = false;
         //print(_rigidbody.velocity.x);
-        GameManager.Instance.playerBehaviour = this;
-        CheckPlayerState();
     }
 
-    public void SetEmptyBall()
+    public void SetBallState(float v, float a, float g = 1.0f)
     {
-        maxVelocityX = 5f;
-        alpha = 10f;
-    }
-
-    public void SetFullBall()
-    {
-        maxVelocityX = 3f;
-        alpha = 7f;
-    }
-
-    private void CheckPlayerState()
-    {
-        if (GameManager.Instance.Coins >= 10)
-        {
-            SetFullBall();
-        }
-        else
-        {
-            SetEmptyBall();
-        }
+        maxVelocityX = v;
+        alpha = a;
+        _rigidbody.gravityScale = g;
     }
 }
