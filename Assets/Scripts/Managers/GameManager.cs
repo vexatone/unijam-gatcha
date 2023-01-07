@@ -86,17 +86,35 @@ class GameManager : MonoBehaviour
             //player sprite check
             UIManager.Instance.UpdateCoinCount(coins);
 
-            if(coins >= 10)
+            if(coins<5)
+            {
+                if (water != null)
+                    water.SetCollider();
+                playerBehaviour.SetBallState(5.0f, 10.0f, 1.0f);
+            }
+            else if(coins < 10 && coins >=5)
+            {
+                if (water != null)
+                    water.SetCollider();
+                playerBehaviour.SetBallState(5.0f, 9.5f, 1.1f);
+            }
+            else if (coins < 15 && coins >= 10)
             {
                 if (water != null)
                     water.SetTrigger();
-                playerBehaviour.SetBallState(3.0f, 7.0f, 1.5f);
+                playerBehaviour.SetBallState(5.0f, 9.0f, 1.2f);
+            }
+            else if (coins < 20 && coins >= 15)
+            {
+                if (water != null)
+                    water.SetTrigger();
+                playerBehaviour.SetBallState(5.0f, 8.5f, 1.3f);
             }
             else
             {
                 if (water != null)
-                    water.SetCollider();
-                playerBehaviour.SetBallState(5.0f, 10.0f);
+                    water.SetTrigger();
+                playerBehaviour.SetBallState(5.0f, 8.0f, 1.4f);
             }
         }
     }

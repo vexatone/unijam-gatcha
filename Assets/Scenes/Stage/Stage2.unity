@@ -38014,6 +38014,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 10
@@ -39350,17 +39354,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -12.666276
+      value: -12.73
       objectReference: {fileID: 0}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.1344757
+      value: 1.23
       objectReference: {fileID: 0}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_LocalPosition.z
@@ -41163,6 +41171,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 4
