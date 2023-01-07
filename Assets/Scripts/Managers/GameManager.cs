@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -73,6 +74,8 @@ class GameManager : MonoBehaviour
         }
     }
 
+    private bool _isGameOngoing = false;
+
     public void GameOver()
     {
         print("Game Over...");
@@ -90,10 +93,7 @@ class GameManager : MonoBehaviour
     private void Start()
     {
         // TODO: 임시 코드. 나중에 데이터 만들면 지워야 함
-        StageIndex = 1;
-        StageName = "완구점";
-        TimeLeft = 200;
-        oneSecondBuffer = 0;
+        
     }
 
     private void Update()
@@ -109,21 +109,33 @@ class GameManager : MonoBehaviour
             Coins = 0;
         }
         */
-        print($"{oneSecondBuffer}");
-        if (oneSecondBuffer >= 1f)
+        if (_isGameOngoing)
         {
-            TimeLeft -= 1;
-            oneSecondBuffer -= 1f;
+            print($"{oneSecondBuffer}");
+            if (oneSecondBuffer >= 1f)
+            {
+                TimeLeft -= 1;
+                oneSecondBuffer -= 1f;
+            }
+            oneSecondBuffer += Time.deltaTime;
         }
-        oneSecondBuffer += Time.deltaTime;
     }
     
     public void LoadScene(string nextScene)
     {
-        SceneManager.LoadScene(nextScene);
         currentSceneName = nextScene;
+        SceneManager.LoadScene(nextScene);
     }
 
+    public void Initialize()
+    {
+        StageIndex = 1;
+        StageName = "완구점";
+        TimeLeft = 200;
+        oneSecondBuffer = 0;
+        _isGameOngoing = true;
+    }
+    
     public void Quit()
     {
         Application.Quit();

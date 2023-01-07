@@ -114,6 +114,7 @@ class UIManager : MonoBehaviour
     private void Start()
     {
         Resume();
+        GameManager.Instance.Initialize();
     }
     private void Update()
     {
