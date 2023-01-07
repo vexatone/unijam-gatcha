@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b902b93017c544dc4bbd532b022e446a
+guid: bbae8ff9c584bbd4da15a5680629ba04
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -105,7 +105,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 3x1_frypan_had_0
+      name: 3x1_spoon_0
       rect:
         serializedVersion: 2
         x: 0
@@ -119,14 +119,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8877161b922f02419d22966b930d09b
-      internalID: 231295882
+      spriteID: 87b6a9d6102200448b27fa862d2269e5
+      internalID: -454853109
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3x1_frypan_had_1
+      name: 3x1_spoon_1
       rect:
         serializedVersion: 2
         x: 600
@@ -140,14 +140,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480b975dbe75890479345cde762a6990
-      internalID: -1138401645
+      spriteID: 831b2a523e8b1b8428c0b02b1960c2c3
+      internalID: -1778511672
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: 3x1_frypan_had_2
+      name: 3x1_spoon_2
       rect:
         serializedVersion: 2
         x: 1200
@@ -161,8 +161,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aa64de6ef94d0564aa071615bf1a5cd9
-      internalID: -866988052
+      spriteID: 2373d56b54967a0409356e4cc72ab091
+      internalID: 513642123
       vertices: []
       indices: 
       edges: []
@@ -178,9 +178,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      3x1_frypan_had_0: 231295882
-      3x1_frypan_had_2: -866988052
-      3x1_frypan_had_1: -1138401645
+      3x1_spoon_0: -454853109
+      3x1_spoon_1: -1778511672
+      3x1_spoon_2: 513642123
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
