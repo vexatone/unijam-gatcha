@@ -33,6 +33,7 @@ class MenuUIManager : MonoBehaviour
     public void UpdateBGMVolume()
     {
         SoundManager.Instance.BGMVolume = bgmSlider.value;
+        SoundManager.Instance.BgmPlayer.volume = bgmSlider.value;
     }
 
     public void UpdateSFXVolume()
