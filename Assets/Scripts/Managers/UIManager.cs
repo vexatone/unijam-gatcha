@@ -1,17 +1,29 @@
 using UnityEngine;
+using TMPro;
 
 class UIManager : MonoBehaviour
 {
+    public static UIManager Instance { get; private set; }
+
     private bool _paused;
     [SerializeField] private GameObject uiCanvasPanel;
     [SerializeField] private GameObject pauseButton;
     [SerializeField] private GameObject pausePopup;
+    [SerializeField] private TextMeshProUGUI stageText;
+    [SerializeField] private TextMeshProUGUI coinText;
+    [SerializeField] private TextMeshProUGUI timerText;
+    [SerializeField] private TextMeshProUGUI pauseStageText;
+    [SerializeField] private TextMeshProUGUI pauseCoinText;
+    [SerializeField] private TextMeshProUGUI pauseTimerText;
 
     public void Pause()
     {
         Time.timeScale = 0f;
         _paused = true;
         // TODO: 스테이지명, 동전 개수, 남은 시간 업데이트
+        pauseStageText.text = $"{GameManager.Instance.StageIndex}. {GameManager.Instance.StageName}";
+        pauseCoinText.text = $"{GameManager.Instance.Coins} / {20}";
+        pauseTimerText.text = $"{GameManager.Instance.TimeLeft}";
         uiCanvasPanel.SetActive(true);
         pausePopup.SetActive(true);
     }
@@ -44,7 +56,62 @@ class UIManager : MonoBehaviour
         Resume();
     }
 
-    // TODO: 나머지 버튼 OnClick 함수 만들기
+    public void OnPausePopupRestartButtonClick()
+    {
+        // TODO
+
+    }
+
+    public void OnPausePopupMainMenuButtonClick()
+    {
+        // TODO
+
+    }
+
+    public void OnPausePopupExitButtonClick()
+    {
+        // TODO
+
+    }
+
+    public void UpdateStage(int? index, string? name)
+    {
+        print($"Current level = {index}. {name}");
+        int i = index ?? GameManager.Instance.StageIndex;
+        string s = name ?? GameManager.Instance.StageName;
+        stageText.text = $"{i}. {s}";
+    }
+
+    public void UpdateCoinCount(int coin)
+    {
+        print($"Coins = {coin}");
+        if (coin < 7)
+            coinText.text = $"<#FFFFFF>{coin}</color> / {GameManager.MaxCoinCount}";
+        else if (coin < 14)
+            coinText.text = $"<#C0C0C0>{coin}</color> / {GameManager.MaxCoinCount}";
+        else
+            coinText.text = $"<#FFD700>{coin}</color> / {GameManager.MaxCoinCount}";
+    }
+
+    public void UpdateTimeLeft(int timeLeft)
+    {
+        print($"Time left = {timeLeft}");
+        if (timeLeft >= 100)
+            timerText.text = $"{timeLeft}";
+        else if (timeLeft >= 50)
+            timerText.text = $"<#FFE0E0>{timeLeft}</color>";
+        else if (timeLeft >= 10)
+            timerText.text = $"<#FFBABA>{timeLeft}</color>";
+        else
+            timerText.text = $"<#FF7070>{timeLeft}</color>";
+    }
+
+    private void Awake()
+    {
+        // Singleton
+        if (Instance != null && Instance != this) Destroy(this);
+        Instance = this;
+    }
 
     private void Start()
     {

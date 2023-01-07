@@ -7,6 +7,41 @@ class GameManager : MonoBehaviour
     public Water water;
     public PlayerBehaviour playerBehaviour;
 
+    public const int MaxCoinCount = 20;
+
+    private int stageIndex;
+    public int StageIndex
+    {
+        get => stageIndex;
+        set
+        {
+            stageIndex = value;
+            UIManager.Instance.UpdateStage(stageIndex, null);
+        }
+    }
+
+    private string stageName;
+    public string StageName
+    {
+        get => stageName;
+        set
+        {
+            stageName = value;
+            UIManager.Instance.UpdateStage(null, stageName);
+        }
+    }
+
+    private int timeLeft;
+    public int TimeLeft
+    {
+        get => timeLeft;
+        set
+        {
+            timeLeft = value;
+            UIManager.Instance.UpdateTimeLeft(timeLeft);
+        }
+    }
+
     private int coins;
     public int Coins
     {
@@ -16,7 +51,8 @@ class GameManager : MonoBehaviour
         {
             coins = value;
             //player sprite check
-            //UI check
+            UIManager.Instance.UpdateCoinCount(coins);
+
             if(coins >= 10)
             {
                 water.SetTrigger();
@@ -37,5 +73,29 @@ class GameManager : MonoBehaviour
         Instance = this;
         coins = 0;
         DontDestroyOnLoad(this);
+    }
+
+    private void Start()
+    {
+        // TODO: 임시 코드. 나중에 데이터 만들면 지워야 함
+        StageIndex = 1;
+        StageName = "완구점";
+        TimeLeft = 200;
+        Coins = 0;
+    }
+
+    private void Update()
+    {
+        // TODO: 테스트용 코드. 나중에 데이터 만들면 지워야 함
+        /*
+        TimeLeft = TimeLeft - 1;
+        if (TimeLeft < 0)
+            TimeLeft = 200;
+        Coins = Coins + 1;
+        if (Coins >= 20)
+        {
+            Coins = 0;
+        }
+        */
     }
 }
