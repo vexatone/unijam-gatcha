@@ -7,6 +7,7 @@ class MouseBehaviour : MonoBehaviour
     [SerializeField] private float wanderSpeed = 2.0f;
     [SerializeField] private float chaseSpeed = 4.0f;
     private Rigidbody2D _rigidbody;
+    private MouseAnimator _animator;
     private GameObject _playerObject;
     private int _wanderDirection = 1;
     private bool _isEnraged = false;
@@ -16,6 +17,7 @@ class MouseBehaviour : MonoBehaviour
         StartCoroutine("Wander");
         _playerObject = GameObject.FindGameObjectWithTag("Player");
         _rigidbody = GetComponent<Rigidbody2D>();
+        _animator = GetComponent<MouseAnimator>();
     }
 
     private void Update()
@@ -25,16 +27,19 @@ class MouseBehaviour : MonoBehaviour
         // Maybe need improvement
         if (!_isEnraged)
         {
+            _animator.direction = (_wanderDirection > 0) ? "right" : "left";
             var vel = new Vector3(_wanderDirection * wanderSpeed, _rigidbody.velocity.y, 0f);
             _rigidbody.velocity = vel;
         }
         else if (_playerObject.transform.position.x >= transform.position.x)
         {
+            _animator.direction = "right";
             var vel = new Vector3(chaseSpeed, _rigidbody.velocity.y, 0f);
             _rigidbody.velocity = vel;
         }
         else if (_playerObject.transform.position.x < transform.position.x)
         {
+            _animator.direction = "left";
             var vel = new Vector3(-chaseSpeed, _rigidbody.velocity.y, 0f);
             _rigidbody.velocity = vel;
         }
