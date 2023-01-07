@@ -16,7 +16,7 @@ class MenuUIManager : MonoBehaviour
 
     public void SFXTest()
     {
-        SoundManager.Instance.PlayEffect("");
+        SoundManager.Instance.PlayEffect("GetCoin");
         // 이름은 알아서
     }
 
@@ -33,7 +33,6 @@ class MenuUIManager : MonoBehaviour
     public void UpdateBGMVolume()
     {
         SoundManager.Instance.BGMVolume = bgmSlider.value;
-        SoundManager.Instance.BgmPlayer.volume = bgmSlider.value;
     }
 
     public void UpdateSFXVolume()
