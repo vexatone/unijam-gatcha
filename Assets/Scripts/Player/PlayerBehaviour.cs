@@ -1,9 +1,11 @@
 using UnityEngine;
+using UnityEngine.Serialization;
 
 class PlayerBehaviour : MonoBehaviour
 {
     private Rigidbody2D _rigidbody;
     private PlayerStatus _statusJudge;
+    public bool jumpable;
     private bool _doubleJumped;
 
     public float maxVelocityX = 5f;
@@ -11,12 +13,12 @@ class PlayerBehaviour : MonoBehaviour
     
     public void Jump()
     {
-        if (_statusJudge.isOnGround)
+        if (_statusJudge.isOnGround && jumpable)
         {
             var boostedVelocity = new Vector3(_rigidbody.velocity.x, 7f, 0f);
             _rigidbody.velocity = boostedVelocity;
         }
-        else if (!_doubleJumped)
+        else if (!_doubleJumped && jumpable)
         {
             var boostedVelocity = new Vector3(_rigidbody.velocity.x * 0.3f, 5f, 0f);
             _rigidbody.velocity = boostedVelocity;
@@ -44,6 +46,7 @@ class PlayerBehaviour : MonoBehaviour
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _statusJudge = GetComponent<PlayerStatus>();
+        jumpable = true;
         _doubleJumped = false;
         GameManager.Instance.playerBehaviour = this;
         GameManager.Instance.Coins = GameManager.Instance.Coins;
