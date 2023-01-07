@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f46c5cdf89b594a40a5b1001f007261f
+guid: 6f924ce657ba0a845aca9b8a7fb0d82c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 844
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cage_temp_left_0
+      name: square_wood_warning_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 400
-        height: 400
+        y: 844
+        width: 844
+        height: 844
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f940adbac54d6c4a981000631004810
-      internalID: 1200750926
+      spriteID: cc23436fd17e8794ead52821410bc373
+      internalID: 1396393363
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cage_temp_left_1
+      name: square_wood_warning_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 800
-        width: 400
-        height: 400
+        x: 844
+        y: 844
+        width: 844
+        height: 844
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,41 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce579c7dd4ce6f44b5b9346ec5ee802
-      internalID: 1801840807
+      spriteID: c84b3f42170bf414db3ec39d5bf74914
+      internalID: -357586031
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cage_temp_left_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e20ab44b0f87b54987e6cf4a75be44a
-      internalID: -94509730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cage_temp_left_3
+      name: square_wood_warning_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 400
+        width: 844
+        height: 844
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +161,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be9e07ded0894634199ac141e595f939
-      internalID: -1613656143
+      spriteID: 96f8187ca7cefa44e8069fcf5ca59e38
+      internalID: 1421498700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: square_wood_warning_3
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 844
+        height: 844
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6207664a2120b42bb8a50c5f64de17
+      internalID: -1965355823
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cage_temp_left_1: 1801840807
-      cage_temp_left_0: 1200750926
-      cage_temp_left_3: -1613656143
-      cage_temp_left_2: -94509730
+      square_wood_warning_3: -1965355823
+      square_wood_warning_1: -357586031
+      square_wood_warning_0: 1396393363
+      square_wood_warning_2: 1421498700
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f46c5cdf89b594a40a5b1001f007261f
+guid: 714b34da7069e15448c51461035ef4be
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 400
+  spritePixelsToUnits: 844
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cage_temp_left_0
+      name: yellow_square_lego-warning_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 400
-        height: 400
+        y: 834
+        width: 834
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f940adbac54d6c4a981000631004810
-      internalID: 1200750926
+      spriteID: c81e4c940a0bd8247895f553996b589f
+      internalID: 2000461718
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cage_temp_left_1
+      name: yellow_square_lego-warning_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 800
-        width: 400
-        height: 400
+        x: 834
+        y: 834
+        width: 834
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,41 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ce579c7dd4ce6f44b5b9346ec5ee802
-      internalID: 1801840807
+      spriteID: 4bf1375a8ce4420439b73be3888617d6
+      internalID: -729663829
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cage_temp_left_2
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 400
-        width: 400
-        height: 400
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e20ab44b0f87b54987e6cf4a75be44a
-      internalID: -94509730
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: cage_temp_left_3
+      name: yellow_square_lego-warning_2
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 400
+        width: 834
+        height: 834
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,8 +161,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: be9e07ded0894634199ac141e595f939
-      internalID: -1613656143
+      spriteID: e4929a2fed527ad46908cd944341f1a1
+      internalID: -228124878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: yellow_square_lego-warning_3
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 834
+        height: 834
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6b6220e4902c3c40a96398cd1fbe324
+      internalID: -185560465
       vertices: []
       indices: 
       edges: []
@@ -199,10 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cage_temp_left_1: 1801840807
-      cage_temp_left_0: 1200750926
-      cage_temp_left_3: -1613656143
-      cage_temp_left_2: -94509730
+      yellow_square_lego-warning_0: 2000461718
+      yellow_square_lego-warning_2: -228124878
+      yellow_square_lego-warning_1: -729663829
+      yellow_square_lego-warning_3: -185560465
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

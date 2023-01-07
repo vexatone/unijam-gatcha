@@ -106,7 +106,7 @@ class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-        print("Game Over...");
+        Restart();
     }
 
     private void Awake()
@@ -138,7 +138,7 @@ class GameManager : MonoBehaviour
     
     public void LoadScene(string nextScene)
     {
-        if (nextScene == "EndingScene")
+        if (nextScene == "Ending")
         {
             if (Coins > 10)
             {

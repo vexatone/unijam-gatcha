@@ -39,7 +39,7 @@ public class DestructibleTiles : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         check = true;
-        yield return new WaitForSeconds(0.9f);
+        yield return new WaitForSeconds(0.4f);
         destructableTilemap.SetTile(destructableTilemap.WorldToCell(hitPosition), null);
         StartCoroutine(BreakTileAnimation(hitPosition));
         yield return null;
