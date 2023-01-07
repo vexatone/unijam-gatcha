@@ -48,7 +48,8 @@ public class SoundManager : MonoBehaviour
         EffectSoundDictionary.Add("Stage1", Resources.Load<AudioClip>("Audio/BGM/Fun Kid - Quincas Moreira"));
         EffectSoundDictionary.Add("Stage2", Resources.Load<AudioClip>("Audio/BGM/Nu Island - DayFox"));
         EffectSoundDictionary.Add("Stage3", Resources.Load<AudioClip>("Audio/BGM/Back To Summer - Nekzlo"));
-        EffectSoundDictionary.Add("Ending", Resources.Load<AudioClip>("Audio/BGM/Bay - Vlad Gluschenko"));
+        EffectSoundDictionary.Add("BadEnding", Resources.Load<AudioClip>("Audio/BGM/Bangla sad music 2023"));
+        EffectSoundDictionary.Add("HappyEnding", Resources.Load<AudioClip>("Audio/BGM/Relax - Peyruis"));
     }
 
     void Start()
