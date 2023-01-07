@@ -18,7 +18,7 @@ class StorySceneManager : MonoBehaviour
         {
             if (isEnding)
             {
-                // Ending
+                GameManager.Instance.Quit();
             }
             else
             {
@@ -44,7 +44,7 @@ class StorySceneManager : MonoBehaviour
             {
                 if (isEnding)
                 {
-                    // Ending
+                    GameManager.Instance.Quit();
                 }
                 else
                 {
