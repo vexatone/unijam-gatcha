@@ -6,6 +6,7 @@ class StorySceneManager : MonoBehaviour
 {
     [SerializeField] private List<string> cutScenePaths;
     [SerializeField] private GameObject imageObject;
+    [SerializeField] private bool isEnding;
 
     private Image _image;
     private int _currentScene;
@@ -15,7 +16,14 @@ class StorySceneManager : MonoBehaviour
         _currentScene = 0;
         if (cutScenePaths.Count == 0)
         {
-            GameManager.Instance.LoadScene("Stage1");
+            if (isEnding)
+            {
+                // Ending
+            }
+            else
+            {
+                GameManager.Instance.LoadScene("Stage1");
+            }
         }
 
         _image = imageObject.GetComponent<Image>();
@@ -32,7 +40,17 @@ class StorySceneManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _currentScene++;
-            if (_currentScene == cutScenePaths.Count) GameManager.Instance.LoadScene("Stage1");
+            if (_currentScene == cutScenePaths.Count)
+            {
+                if (isEnding)
+                {
+                    // Ending
+                }
+                else
+                {
+                    GameManager.Instance.LoadScene("Stage1");
+                }
+            }
 
             LoadCurrentImage();
         }
