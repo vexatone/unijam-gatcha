@@ -36,6 +36,13 @@ public class DestructibleTiles : MonoBehaviour
         check = true;
         yield return new WaitForSeconds(0.9f);
         destructableTilemap.SetTile(destructableTilemap.WorldToCell(hitPosition), null);
+        StartCoroutine(BreakTileAnimation());
         yield return null;
+    }
+
+    private IEnumerator BreakTileAnimation()
+    {
+        // TODO
+        yield return new WaitForEndOfFrame();
     }
 }

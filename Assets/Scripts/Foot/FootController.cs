@@ -26,11 +26,7 @@ public class FootController : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D col)
     {
-        if (col.gameObject.CompareTag("Player"))
-        {
-            GameManager.Instance.GameOver();
-        }
-        else
+        if (!col.gameObject.CompareTag("Player"))
         {
             _grounded = true;
         }
@@ -38,6 +34,15 @@ public class FootController : MonoBehaviour
     private void OnCollisionExit2D()
     {
         _grounded = false;
+    }
+
+    private void OnTriggerStay2D(Collider2D col)
+    {
+        if (col.gameObject.CompareTag("Player"))
+        {
+            if (_thwompState == FootState.Stay)
+                GameManager.Instance.GameOver();
+        }
     }
 
     void Start()
