@@ -43,6 +43,12 @@ public class SoundManager : MonoBehaviour
         EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/DM-CGS-26"));
         EffectSoundDictionary.Add("Jump", Resources.Load<AudioClip>("Audio/PUNCH_CLEAN_HEAVY_10"));
 
+        EffectSoundDictionary.Add("MainMenu", Resources.Load<AudioClip>("Audio/BGM/Palm Trees (w Joey Edwin) - Joakim Karud"));
+        EffectSoundDictionary.Add("Intro", Resources.Load<AudioClip>("Audio/BGM/Road Trip - Joakim Karud"));
+        EffectSoundDictionary.Add("Stage1", Resources.Load<AudioClip>("Audio/BGM/Fun Kid - Quincas Moreira"));
+        EffectSoundDictionary.Add("Stage2", Resources.Load<AudioClip>("Audio/BGM/Nu Island - DayFox"));
+        EffectSoundDictionary.Add("Stage3", Resources.Load<AudioClip>("Audio/BGM/Back To Summer - Nekzlo"));
+        EffectSoundDictionary.Add("Ending", Resources.Load<AudioClip>("Audio/BGM/Bay - Vlad Gluschenko"));
     }
 
     void Start()

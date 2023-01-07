@@ -120,6 +120,7 @@ class GameManager : MonoBehaviour
 
     private void Start()
     {
+        SoundManager.Instance.PlayBgm("MainMenu");
     }
 
     private void Update()
@@ -140,6 +141,7 @@ class GameManager : MonoBehaviour
         currentSceneName = nextScene;
         SoundManager.Instance.PlayEffect("NextScene");
         SceneManager.LoadScene(nextScene);
+        SoundManager.Instance.PlayBgm(nextScene);
         resetCoin = Coins;
     }
 
