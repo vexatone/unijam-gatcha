@@ -42,12 +42,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 417
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -103,7 +103,343 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: 4x4_cup_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1251
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f637c12c17dc0c041907fc5602fbbc9c
+      internalID: -1169957409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_1
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 1251
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d1b4c4289c08a94883e297a1173d894
+      internalID: 755058824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_2
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 1251
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4972e8cf1aecd4daf3a5833942478f
+      internalID: -221894124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_3
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 1251
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259d7af94ee5fcf4aabd1fa722a78f32
+      internalID: 1754443022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 834
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba97f4823a458c4a8acb887a53dc7c3
+      internalID: 74704998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_5
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 834
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04ed80a420d26d44d88c45ef2a76028e
+      internalID: 1146720457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_6
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 834
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dce5d00db43bab447a7465784403b3c2
+      internalID: -1271161027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_7
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 834
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f03dd9a9071a9f04b8717947d3944c7d
+      internalID: -866100271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 417
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffd6aceef1bf20547a39753080707c47
+      internalID: 1666932631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_9
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 417
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff31333d3a76e3e4d9861f3f7cab8cdd
+      internalID: 1425218030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_10
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 417
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0b2b3c31e17499418380dc9e64870d2
+      internalID: -806688389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_11
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 417
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 771c213e90efb4b4faa2029dd345d4c7
+      internalID: -2088413172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 761275f1bd828ac49a1f2024aecb9312
+      internalID: -625784097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_13
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 0
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b2de875f0b66d5488afed0379de2311
+      internalID: -783934448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_14
+      rect:
+        serializedVersion: 2
+        x: 834
+        y: 0
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e5493a58f924945a6d596536675500
+      internalID: -324807960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 4x4_cup_15
+      rect:
+        serializedVersion: 2
+        x: 1251
+        y: 0
+        width: 417
+        height: 417
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09310260ab9ace3418affd92dec30d3f
+      internalID: 2009213034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -114,7 +450,23 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      4x4_cup_1: 755058824
+      4x4_cup_3: 1754443022
+      4x4_cup_0: -1169957409
+      4x4_cup_4: 74704998
+      4x4_cup_10: -806688389
+      4x4_cup_7: -866100271
+      4x4_cup_9: 1425218030
+      4x4_cup_11: -2088413172
+      4x4_cup_15: 2009213034
+      4x4_cup_8: 1666932631
+      4x4_cup_12: -625784097
+      4x4_cup_14: -324807960
+      4x4_cup_13: -783934448
+      4x4_cup_5: 1146720457
+      4x4_cup_2: -221894124
+      4x4_cup_6: -1271161027
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
