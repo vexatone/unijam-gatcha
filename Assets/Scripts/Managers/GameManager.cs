@@ -78,6 +78,10 @@ class GameManager : MonoBehaviour
 
         set
         {
+            if(value>coins)
+            {
+                SoundManager.Instance.PlayEffect("GetCoin");
+            }
             coins = value;
             //player sprite check
             UIManager.Instance.UpdateCoinCount(coins);
@@ -134,6 +138,7 @@ class GameManager : MonoBehaviour
     public void LoadScene(string nextScene)
     {
         currentSceneName = nextScene;
+        SoundManager.Instance.PlayEffect("NextScene");
         SceneManager.LoadScene(nextScene);
         resetCoin = Coins;
     }
@@ -161,6 +166,7 @@ class GameManager : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(currentSceneName);
+        SoundManager.Instance.PlayEffect("NextScene");
         Coins = resetCoin;
     }
 }

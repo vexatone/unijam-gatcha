@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class SoundManager : MonoBehaviour
 {
+    public static SoundManager Instance { get; private set; }
+
     public AudioSource BgmPlayer;
     public AudioSource EffectPlayer;
 
@@ -17,6 +19,8 @@ public class SoundManager : MonoBehaviour
 
     void Awake()
     {
+        if (Instance != null && Instance != this) Destroy(this);
+        Instance = this;
         DontDestroyOnLoad(this.gameObject);
 
         GameObject EffectTempObject = new GameObject("Effect");
@@ -34,6 +38,10 @@ public class SoundManager : MonoBehaviour
 
         BGMVolume = 1f;
         EffectVolume = 0.3f;
+
+        EffectSoundDictionary.Add("GetCoin", Resources.Load<AudioClip>("Audio/DM-CGS-45"));
+        EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/DM-CGS-26"));
+        EffectSoundDictionary.Add("Jump", Resources.Load<AudioClip>("Audio/PUNCH_CLEAN_HEAVY_10"));
 
     }
 
