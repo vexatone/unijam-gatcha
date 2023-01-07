@@ -12,7 +12,6 @@ public class Gum : MonoBehaviour
             player.jumpable = false;
             player.SetBallState(1.5f, 4.0f);
             player.SetDrag(2f);
-            Debug.Log("asdf");
         }
     }
 
