@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 class StorySceneManager : MonoBehaviour
@@ -16,7 +15,7 @@ class StorySceneManager : MonoBehaviour
         _currentScene = 0;
         if (cutScenePaths.Count == 0)
         {
-            SceneManager.LoadScene("Stage1");
+            GameManager.Instance.LoadScene("Stage1");
         }
 
         _image = imageObject.GetComponent<Image>();
@@ -33,7 +32,7 @@ class StorySceneManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             _currentScene++;
-            if (_currentScene == cutScenePaths.Count) SceneManager.LoadScene("Stage1");
+            if (_currentScene == cutScenePaths.Count) GameManager.Instance.LoadScene("Stage1");
 
             LoadCurrentImage();
         }
