@@ -138,11 +138,33 @@ class GameManager : MonoBehaviour
     
     public void LoadScene(string nextScene)
     {
-        currentSceneName = nextScene;
-        SoundManager.Instance.PlayEffect("NextScene");
-        SceneManager.LoadScene(nextScene);
-        SoundManager.Instance.PlayBgm(nextScene);
-        resetCoin = Coins;
+        if (nextScene == "EndingScene")
+        {
+            if (Coins > 10)
+            {
+                string ending = "HappyEnding";
+                currentSceneName = ending;
+                SoundManager.Instance.PlayEffect("NextScene");
+                SceneManager.LoadScene(ending);
+                SoundManager.Instance.PlayBgm(ending);
+            }
+            else
+            {
+                string ending = "BadEnding";
+                currentSceneName = ending;
+                SoundManager.Instance.PlayEffect("NextScene");
+                SceneManager.LoadScene(ending);
+                SoundManager.Instance.PlayBgm(ending);
+            }
+        }
+        else
+        {
+            currentSceneName = nextScene;
+            SoundManager.Instance.PlayEffect("NextScene");
+            SceneManager.LoadScene(nextScene);
+            SoundManager.Instance.PlayBgm(nextScene);
+            resetCoin = Coins;
+        }
     }
 
     public void Initialize()
