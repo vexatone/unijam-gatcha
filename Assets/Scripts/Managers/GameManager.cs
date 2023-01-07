@@ -96,6 +96,7 @@ class GameManager : MonoBehaviour
             }
         }
     }
+    public int resetCoin;
 
     private bool _isGameOngoing = false;
 
@@ -134,6 +135,7 @@ class GameManager : MonoBehaviour
     {
         currentSceneName = nextScene;
         SceneManager.LoadScene(nextScene);
+        resetCoin = Coins;
     }
 
     public void Initialize()
@@ -158,6 +160,7 @@ class GameManager : MonoBehaviour
 
     public void Restart()
     {
-        LoadScene(currentSceneName);
+        SceneManager.LoadScene(currentSceneName);
+        Coins = resetCoin;
     }
 }
