@@ -64,6 +64,8 @@ class UIManager : MonoBehaviour
     public void OnPausePopupMainMenuButtonClick()
     {
         GameManager.Instance.LoadScene("MainMenu");
+        Destroy(GameManager.Instance.gameObject);
+        Destroy(SoundManager.Instance.gameObject);
     }
 
     public void OnPausePopupExitButtonClick()
