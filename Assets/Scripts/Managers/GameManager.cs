@@ -96,7 +96,7 @@ class GameManager : MonoBehaviour
             {
                 if (water != null)
                     water.SetCollider();
-                playerBehaviour.SetBallState(5.0f, 9.5f, 1.1f);
+                playerBehaviour.SetBallState(5.0f, 9.5f, 1.0f);
             }
             else if (coins < 15 && coins >= 10)
             {
@@ -108,7 +108,7 @@ class GameManager : MonoBehaviour
             {
                 if (water != null)
                     water.SetTrigger();
-                playerBehaviour.SetBallState(5.0f, 8.5f, 1.3f);
+                playerBehaviour.SetBallState(5.0f, 8.5f, 1.2f);
             }
             else
             {
