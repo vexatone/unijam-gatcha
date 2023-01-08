@@ -49,10 +49,14 @@ class PlayerBehaviour : MonoBehaviour
         _rigidbody.velocity = new Vector2(xVel, _rigidbody.velocity.y);
     }
 
-    private void Start()
+    private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody2D>();
         _statusJudge = GetComponent<PlayerStatus>();
+    }
+
+    private void Start()
+    {
         jumpable = true;
         _doubleJumped = false;
         GameManager.Instance.playerBehaviour = this;
