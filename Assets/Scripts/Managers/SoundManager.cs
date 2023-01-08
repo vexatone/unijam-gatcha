@@ -10,8 +10,28 @@ public class SoundManager : MonoBehaviour
     public AudioSource BgmPlayer;
     public AudioSource EffectPlayer;
 
-    public float BGMVolume { get; set; }
-    public float EffectVolume { get; set; }
+    private float _BGMVolume;
+    public float BGMVolume
+    { 
+        get => _BGMVolume;
+        set
+        {
+            _BGMVolume = value;
+            if (BgmPlayer != null)
+                BgmPlayer.volume = value;
+        }
+    }
+    private float _EffectVolume;
+    public float EffectVolume
+    {
+        get => _EffectVolume;
+        set
+        {
+            _EffectVolume = value;
+            if (EffectPlayer != null)
+                EffectPlayer.volume = value;
+        }
+    }
     
     [SerializeField] private AudioClip[] EffectAudioClips;
 
@@ -36,8 +56,8 @@ public class SoundManager : MonoBehaviour
             EffectSoundDictionary.Add(audioclip.name, audioclip);
         }
 
-        BGMVolume = 1f;
-        EffectVolume = 0.3f;
+        _BGMVolume = 0.5f;
+        _EffectVolume = 0.3f;
 
         EffectSoundDictionary.Add("Coin1", Resources.Load<AudioClip>("Audio/SE/DM-CGS-45"));
         EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/SE/DM-CGS-26"));
@@ -64,13 +84,13 @@ public class SoundManager : MonoBehaviour
 
     public void PlayEffect(string name)
     {
-        EffectPlayer.PlayOneShot(EffectSoundDictionary[name], EffectVolume);
+        EffectPlayer.PlayOneShot(EffectSoundDictionary[name], _EffectVolume);
     }
 
     public void PlayBgm(string name)
     {
         BgmPlayer.loop = true;
-        BgmPlayer.volume = BGMVolume;
+        BgmPlayer.volume = _BGMVolume;
 
         BgmPlayer.clip = EffectSoundDictionary[name];
         BgmPlayer.Play();
