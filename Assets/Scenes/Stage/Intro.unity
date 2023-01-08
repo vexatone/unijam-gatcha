@@ -153,7 +153,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScenePaths:
-  - Image/BadEnding1
+  - Image/Intro1
+  - Image/Intro2
+  - Image/Intro3
+  - Image/Intro4
+  - Image/Intro5
+  - Image/Intro6
+  - Image/Intro7
+  - Image/Intro8
+  - Image/Intro9
+  - Image/Intro10
   imageObject: {fileID: 2052526715}
   isEnding: 0
 --- !u!4 &11594849
