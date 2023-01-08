@@ -700,7 +700,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 187230684}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 358932697}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OnPausePopupRestartButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &187230684
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2265,6 +2277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -4603,7 +4619,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1409180424}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 358932697}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OnPausePopupMainMenuButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1409180424
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4653,6 +4681,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -4847,7 +4879,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1471902251}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 358932697}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: OnPausePopupExitButtonClick
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1471902251
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5089,6 +5133,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Coin (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 7777565265440017789, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa11a41c1f799aa45b623172f8d3ab21, type: 3}
     - target: {fileID: 7777565265440017790, guid: 71c593f794bd45f41ae3cce3feab750a, type: 3}
       propertyPath: m_RootOrder
       value: 9
