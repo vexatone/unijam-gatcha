@@ -152,7 +152,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f7245f59227a8544ea0f04948f14b7bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  cutScenePaths: []
+  cutScenePaths:
+  - Image/EndingCommon0
+  - Image/EndingCommon1
+  - Image/EndingCommon2
+  - Image/EndingCommon3
   imageObject: {fileID: 2052526715}
   isEnding: 1
 --- !u!4 &11594849
