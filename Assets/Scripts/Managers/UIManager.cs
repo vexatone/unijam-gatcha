@@ -81,9 +81,9 @@ class UIManager : MonoBehaviour
 
     public void UpdateCoinCount(int coin)
     {
-        if (coin < 7)
+        if (coin < 10)
             coinText.text = $"<#FFFFFF>{coin}</color> / {GameManager.MaxCoinCount}";
-        else if (coin < 14)
+        else if (coin < 15)
             coinText.text = $"<#C0C0C0>{coin}</color> / {GameManager.MaxCoinCount}";
         else
             coinText.text = $"<#FFD700>{coin}</color> / {GameManager.MaxCoinCount}";

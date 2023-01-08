@@ -13,6 +13,11 @@ public class Water : MonoBehaviour
         GameManager.Instance.Coins = GameManager.Instance.Coins;
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        //SoundManager.Instance.PlayEffect("Water");
+    }
+
     public void SetCollider()
     {
         if(col != null)

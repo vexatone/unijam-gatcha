@@ -57,7 +57,7 @@ public class SoundManager : MonoBehaviour
         }
 
         _BGMVolume = 0.5f;
-        _EffectVolume = 0.6f;
+        _EffectVolume = 0.8f;
 
         EffectSoundDictionary.Add("Coin1", Resources.Load<AudioClip>("Audio/SE/DM-CGS-45"));
         EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/SE/DM-CGS-26"));
