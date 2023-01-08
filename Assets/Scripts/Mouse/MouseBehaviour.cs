@@ -23,7 +23,7 @@ class MouseBehaviour : MonoBehaviour
     private void Update()
     {
         UpdateEnragedState();
-        
+
         // Maybe need improvement
         if (!_isEnraged)
         {
@@ -51,13 +51,14 @@ class MouseBehaviour : MonoBehaviour
                         && Mathf.Abs(transform.position.y - _playerObject.transform.position.y) <= 1f)
         {
             _isEnraged = true;
+            SoundManager.Instance.PlayEffect("Mouse");
         }
         else if (_isEnraged && Mathf.Abs(transform.position.x - _playerObject.transform.position.x) >= 4f)
         {
             _isEnraged = false;
         }
     }
-    
+
     private IEnumerator Wander()
     {
         while (true)
