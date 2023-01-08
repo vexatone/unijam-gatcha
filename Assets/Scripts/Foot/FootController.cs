@@ -41,7 +41,10 @@ public class FootController : MonoBehaviour
         if (col.gameObject.CompareTag("Player"))
         {
             if (_thwompState == FootState.Stay)
+            {
+                SoundManager.Instance.PlayEffect("Stomp");
                 GameManager.Instance.GameOver();
+            }
         }
     }
 

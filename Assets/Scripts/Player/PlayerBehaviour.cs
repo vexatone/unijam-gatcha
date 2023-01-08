@@ -20,6 +20,7 @@ class PlayerBehaviour : MonoBehaviour
             // 그냥 점프
             var boostedVelocity = new Vector3(_rigidbody.velocity.x, 7f, 0f);
             _rigidbody.velocity = boostedVelocity;
+            SoundManager.Instance.PlayEffect("Jump");
         }
         else if (!_doubleJumped && jumpable)
         {
@@ -27,6 +28,7 @@ class PlayerBehaviour : MonoBehaviour
             var boostedVelocity = new Vector3(_rigidbody.velocity.x * 0.3f, 5f, 0f);
             _rigidbody.velocity = boostedVelocity;
             _doubleJumped = true;
+            SoundManager.Instance.PlayEffect("DoubleJump");
             StartCoroutine(_doubleJumpEffect.GetComponent<DoubleJumpEffect>().DoubleJumpEffectCoroutine());
         }
     }

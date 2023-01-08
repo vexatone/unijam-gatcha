@@ -39,9 +39,14 @@ public class SoundManager : MonoBehaviour
         BGMVolume = 1f;
         EffectVolume = 0.3f;
 
-        EffectSoundDictionary.Add("GetCoin", Resources.Load<AudioClip>("Audio/DM-CGS-45"));
-        EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/DM-CGS-26"));
-        EffectSoundDictionary.Add("Jump", Resources.Load<AudioClip>("Audio/PUNCH_CLEAN_HEAVY_10"));
+        EffectSoundDictionary.Add("Coin1", Resources.Load<AudioClip>("Audio/SE/DM-CGS-45"));
+        EffectSoundDictionary.Add("NextScene", Resources.Load<AudioClip>("Audio/SE/DM-CGS-26"));
+        EffectSoundDictionary.Add("Jump", Resources.Load<AudioClip>("Audio/SE/Jump19"));
+        EffectSoundDictionary.Add("DoubleJump", Resources.Load<AudioClip>("Audio/SE/Jump16"));
+        EffectSoundDictionary.Add("Landing", Resources.Load<AudioClip>("Audio/SE/PUNCH_CLEAN_HEAVY_10"));  // 현재 안 씀
+        EffectSoundDictionary.Add("Water", Resources.Load<AudioClip>("Audio/SE/Splash"));  // TODO
+        EffectSoundDictionary.Add("Mouse", Resources.Load<AudioClip>("Audio/SE/Squeak"));  // TODO
+        EffectSoundDictionary.Add("Stomp", Resources.Load<AudioClip>("Audio/SE/Stomp"));
 
         EffectSoundDictionary.Add("MainMenu", Resources.Load<AudioClip>("Audio/BGM/Palm Trees (w Joey Edwin) - Joakim Karud"));
         EffectSoundDictionary.Add("Intro", Resources.Load<AudioClip>("Audio/BGM/Road Trip - Joakim Karud"));

@@ -16,7 +16,7 @@ class MenuUIManager : MonoBehaviour
 
     public void SFXTest()
     {
-        SoundManager.Instance.PlayEffect("GetCoin");
+        SoundManager.Instance.PlayEffect("Coin1");
         // 이름은 알아서
     }
 

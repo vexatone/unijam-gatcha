@@ -80,7 +80,7 @@ class GameManager : MonoBehaviour
         {
             if(value>coins)
             {
-                SoundManager.Instance.PlayEffect("GetCoin");
+                SoundManager.Instance.PlayEffect("Coin1");
             }
             coins = value;
             //player sprite check
