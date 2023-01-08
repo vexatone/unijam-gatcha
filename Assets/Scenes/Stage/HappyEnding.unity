@@ -157,6 +157,8 @@ MonoBehaviour:
   - Image/EndingCommon1
   - Image/EndingCommon2
   - Image/EndingCommon3
+  - Image/GoodEnding1
+  - Image/GoodEnding2
   imageObject: {fileID: 2052526715}
   isEnding: 1
 --- !u!4 &11594849

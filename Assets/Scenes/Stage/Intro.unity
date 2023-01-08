@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cutScenePaths:
+  - Image/StartGuide
   - Image/Intro1
   - Image/Intro2
   - Image/Intro3
